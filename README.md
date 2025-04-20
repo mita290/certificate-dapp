@@ -17,41 +17,6 @@ This is a decentralized application (DApp) that enables educational institutions
 
 ---
 
-## 📁 Folder Structure
-
-```
-blockchain-certificate-dapp/
-│
-├── frontend/                   # Vite + React frontend for issuing and verifying certificates
-│   ├── public/
-│   ├── src/
-│   │   ├── components/         # React components (IssueForm, VerifyForm, etc.)
-│   │   ├── utils/              # Utility functions (e.g., interacting with smart contract)
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── index.html
-│   └── vite.config.js
-│
-├── smart-contract/            # Truffle project for the smart contract
-│   ├── contracts/
-│   │   └── Certificate.sol     # Solidity smart contract
-│   ├── scripts/
-│   │   └── deploy.js           # Deployment script
-│   ├── test/                  # Contract tests (optional)
-│   ├── truffle.config.js
-│   └── package.json
-│
-├── screenshots/               # Screenshots and architecture diagram for documentation
-│   ├── issue_certificate.png
-│   ├── verify_certificate.png
-│   └── architecture_diagram.png
-│
-├── README.md
-└── LICENSE
-```
-
----
-
 ## Setup Instructions
 
 1. **Clone the Repository**
@@ -90,12 +55,16 @@ blockchain-certificate-dapp/
 
 6. Copy the contents of ```build/contracts/Certificate.json``` to ```client/src/contracts/Certificate.json```
 
-7. **Run the Frontend**
+7. Install MetaMask in your browser and login. Then connect to your ganache network by including it as a testnet.
+
+8. **Run the Frontend**
    ```bash
    cd ../client
    npm run dev
    ```
+9. Navigate to l```ocalhost:5173```. Add new account to MetaMask using one of the private keys specified in your ganache terminal.
 
+10. You can now issue and verify certificates via MetaMask.
 
 ---
 
