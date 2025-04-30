@@ -55,14 +55,14 @@ This is a decentralized application (DApp) that enables educational institutions
 
 6. Copy the contents of ```build/contracts/Certificate.json``` to ```client/src/contracts/Certificate.json```
 
-7. Install MetaMask in your browser and login. Then connect to your ganache network by including it as a testnet.
+7. **Install MetaMask in your browser and login. Then connect to your ganache network by including it as a testnet.**
 
 8. **Run the Frontend**
    ```bash
    cd ../client
    npm run dev
    ```
-9. Navigate to l```ocalhost:5173```. Add new account to MetaMask using one of the private keys specified in your ganache terminal.
+9. Navigate to ```localhost:5173```. Add new account to MetaMask using one of the private keys specified in your ganache terminal.
 
 10. You can now issue and verify certificates via MetaMask.
 
